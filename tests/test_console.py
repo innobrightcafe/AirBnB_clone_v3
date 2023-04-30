@@ -59,7 +59,7 @@ class TestHBNBCommandDocs(unittest.TestCase):
 
     def test_doc_class(self):
         """... documentation for the class"""
-        expected = '\nCommand inerpreter class\n'
+        expected = '\nCommand interpreter class\n'
         actual = HBNBCommand.__doc__
         self.assertEqual(expected, actual)
 
