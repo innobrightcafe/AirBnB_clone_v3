@@ -53,15 +53,15 @@ class TestHBNBCommandDocs(unittest.TestCase):
 
     def test_doc_file(self):
         """... documentation for the file"""
-        expected = '\nCommand interpreter for Holberton AirBnB project\n'
+        expected = ' Command interpreter for Holberton AirBnB project '
         actual = console.__doc__
-        self.assertEqual(expected, actual)
+        self.assertEqual(actual, expected)
 
     def test_doc_class(self):
         """... documentation for the class"""
-        expected = '\nCommand interpreter class\n'
+        expected = ' Command interpreter class '
         actual = HBNBCommand.__doc__
-        self.assertEqual(expected, actual)
+        self.assertEqual(actual, expected)
 
 
 if __name__ == "__main__":
