@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" console """
+""" Command interpreter for Holberton AirBnB project """
 
 import cmd
 from datetime import datetime
@@ -18,7 +18,7 @@ classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
 
 
 class HBNBCommand(cmd.Cmd):
-    """ HBNH console """
+    """ Command interpreter class """
     prompt = '(hbnb) '
 
     def do_EOF(self, arg):
