@@ -1,7 +1,7 @@
 from flask import Flask
 from models import storage
 from api.v1.views import app_views
-import os
+from os import getenv
 
 
 app = Flask(__name__)
@@ -15,6 +15,6 @@ def teardown_db(exception):
 
 
 if __name__ == "__main__":
-    host = os.getenv("HBNB_API_HOST", '0.0.0.0')
-    port = int(os.getenv("HBNB_API_PORT", 5000))
-    app.run(host=host, port=port, threaded=True)
+    host1 = getenv("HBNB_API_HOST")
+    port1 = int(getenv("HBNB_API_PORT"))
+    app.run(host=host1, port=port1, threaded=True)
